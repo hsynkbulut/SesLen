@@ -4,7 +4,6 @@ import 'package:seslen_app/ui/components/custom_bottom_navbar.dart';
 import 'package:seslen_app/ui/views/AboutPage/about_page.dart';
 import 'package:seslen_app/ui/views/CategoriesPage/text_to_video.dart';
 import 'package:seslen_app/ui/views/CategoriesPage/speech_to_video.dart';
-import 'package:seslen_app/ui/views/FeedbackPage/feedback.dart';
 import 'package:seslen_app/ui/views/HelpPage/help_page.dart';
 import 'route_constant.dart';
 
@@ -15,8 +14,6 @@ class RouterGenerator {
         return MaterialPageRoute(builder: (_) => CustomBottomNavbar());
       case RouteConstant.helpScreenRoute:
         return MaterialPageRoute(builder: (_) => HelpPage());
-      case RouteConstant.feedbackScreenRoute:
-        return MaterialPageRoute(builder: (_) => FeedBack());
       case RouteConstant.aboutScreenRoute:
         return MaterialPageRoute(builder: (_) => AboutPage());
       case RouteConstant.textToVideoScreenRoute:
