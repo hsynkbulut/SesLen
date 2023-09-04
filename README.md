@@ -1,16 +1,23 @@
-# seslen_app
+# SesLen
+Bu uygulama, işitme engelli bireylerin sesli veya yazılı ifadeleri işaret dilinde video olarak görmelerini sağlayan bir mobil uygulamadır. Bu sayede, işitme engelli bireyler bulundukları ortamlarda konuşulanları anlayabilir ve sohbete katılabilirler.
 
-A new Flutter project.
+![image](https://github.com/hsynkbulut/SesLen/blob/master/assets/icons/app_logo.png)
 
-## Getting Started
+## Ekip Üyeleri
+- Hüseyin Karabulut
+- Mustafa Fatih Yıldız
+- Salih Dal
+- Furkan Ülgen
 
-This project is a starting point for a Flutter application.
+## HEDEF KİTLE 
+- İşitme Engelli Bireyler ve onlarla iletişim halinde olan diğer bireyler
 
-A few resources to get you started if this is your first Flutter project:
+## Özellikler
+- Uygulama iki seçenek sunar: Sesten Videoya Çeviri ve Metinden Videoya Çeviri.
+- Sesten Videoya Çeviri seçeneğinde, kullanıcı mikrofonu kullanarak sesli bir ifade kaydeder. Uygulama bu sesi işaret diline çevirir ve ekranda video olarak gösterir.
+- Metinden Videoya Çeviri seçeneğinde, kullanıcı klavye ile yazılı bir ifade yazar. Uygulama bu metni işaret diline çevirir ve ekranda video olarak gösterir.
+- Uygulama, Türk İşaret Dili’ni destekler.
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+---
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+Bu uygulamayı geliştirirken işitme engelli bireylere yardımcı olma amacımızı gerçekleştirmeye çalıştık. Eğer projemize katkıda bulunmak veya sorularınız varsa, lütfen bizimle iletişime geçin.
