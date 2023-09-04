@@ -13,6 +13,7 @@ dependencies:
   
   #İkon paketi için
   cupertino_icons: ^1.0.2
+  font_awesome_flutter: ^10.5.0
 
   #Mikrofon butonuna hareketli animasyon eklemek için
   avatar_glow: ^2.0.2
@@ -25,8 +26,6 @@ dependencies:
   chewie: ^1.7.0
 
   #bottom navbar için
-  persistent_bottom_nav_bar: ^5.0.2
-  font_awesome_flutter: ^10.5.0
   custom_line_indicator_bottom_navbar: ^0.0.8
 
 
