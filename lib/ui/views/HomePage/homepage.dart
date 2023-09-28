@@ -6,6 +6,8 @@ import 'package:seslen_app/core/utils/themes/custom_colors.dart';
 import 'package:seslen_app/ui/views/HomePage/components/home_card_widget.dart';
 import 'package:seslen_app/ui/views/HomePage/components/home_grid_view.dart';
 
+import '../../components/custom_appbar.dart';
+
 class HomePage extends StatefulWidget {
   const HomePage({super.key});
 
@@ -20,6 +22,7 @@ class _HomePageState extends State<HomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: gradientColor2, //Color(0xFFFFC800),
+      appBar: CustomAppBar(),
       /*
       appBar: AppBar(
         backgroundColor: primaryColor,
