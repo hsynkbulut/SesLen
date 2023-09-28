@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:seslen_app/ui/components/custom_appbar.dart';
 
 class HelpPage extends StatefulWidget {
   const HelpPage({super.key});
@@ -11,9 +12,7 @@ class _HelpPageState extends State<HelpPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: const Text('Yardım'),
-      ),
+      appBar: const CustomAppBar(),
       body: Center(
         child: Column(
           children: [

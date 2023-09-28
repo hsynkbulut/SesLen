@@ -7,11 +7,11 @@ import 'package:seslen_app/common/helpers/snackbar_helper.dart';
 import 'package:seslen_app/core/services/video_data_manager.dart';
 import 'package:seslen_app/core/utils/themes/background_gradient.dart';
 import 'package:seslen_app/core/utils/themes/custom_colors.dart';
+import 'package:seslen_app/ui/components/custom_appbar.dart';
 import 'package:speech_to_text/speech_to_text.dart' as stt;
 import 'package:video_player/video_player.dart';
 import 'package:chewie/chewie.dart';
 import 'package:avatar_glow/avatar_glow.dart';
-
 import 'components/custom_button_style.dart';
 import 'components/custom_text_field.dart';
 
@@ -160,13 +160,7 @@ class _SpeechToVideoState extends State<SpeechToVideo> {
   Widget build(BuildContext context) {
     return Scaffold(
       //backgroundColor: bgColor,
-      appBar: AppBar(
-          centerTitle: true,
-          title: const Text(
-            "Video Çeviri",
-          ),
-          backgroundColor: primaryColor //Color(0xFF3468EA),
-          ),
+      appBar: const CustomAppBar(showBackButton: true),
       body: Container(
         decoration: backgroundGradient
             .buildGradient(), // Arka plan rengini gradient olarak ayarlamak için

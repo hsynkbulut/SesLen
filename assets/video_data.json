@@ -1,19 +1,105 @@
 {
-    "görüşürüz": [
-      "https://isaretdilisozlugu.com/video/kelime/vid_g%C3%B6r%C3%BC%C5%9F%C3%BCr%C3%BCz.mp4"
-    ],
-    "görüşeceğiz": [
-      "https://isaretdilisozlugu.com/video/kelime/vid_g%C3%B6r%C3%BC%C5%9F%C3%BCr%C3%BCz.mp4"
-    ],
-    "görüşcez": [
-      "https://isaretdilisozlugu.com/video/kelime/vid_g%C3%B6r%C3%BC%C5%9F%C3%BCr%C3%BCz.mp4"
-    ],
-    "görüşelim": [
-        "https://isaretdilisozlugu.com/video/kelime/vid_g%C3%B6r%C3%BC%C5%9F%C3%BCr%C3%BCz.mp4"
-    ],
-    "merhaba": [
-        "https://isaretdilisozlugu.com/video/kelime/vid_merhaba.mp4"
-    ],
+    "0": ["https://isaretdilisozlugu.com/video/kelime/vid_0.mp4"],
+    "sıfır": ["https://isaretdilisozlugu.com/video/kelime/vid_0.mp4"],
+    "10": ["https://isaretdilisozlugu.com/video/kelime/vid_10.mp4"],
+    "on": ["https://isaretdilisozlugu.com/video/kelime/vid_10.mp4"],
+    "100": ["https://isaretdilisozlugu.com/video/kelime/vid_100.mp4"],
+    "1000": ["https://isaretdilisozlugu.com/video/kelime/vid_1000.mp4"],
+    "11": ["https://isaretdilisozlugu.com/video/kelime/vid_11.mp4"],
+    "12": ["https://isaretdilisozlugu.com/video/kelime/vid_12.mp4"],
+    "13": ["https://isaretdilisozlugu.com/video/kelime/vid_13.mp4"],
+    "14": ["https://isaretdilisozlugu.com/video/kelime/vid_14.mp4"],
+    "15": ["https://isaretdilisozlugu.com/video/kelime/vid_15.mp4"],
+    "30": ["https://isaretdilisozlugu.com/video/kelime/vid_30.mp4"],
+    "300": ["https://isaretdilisozlugu.com/video/kelime/vid_300.mp4"],
+    "3000": ["https://isaretdilisozlugu.com/video/kelime/vid_3000.mp4"],
+    "40": ["https://isaretdilisozlugu.com/video/kelime/vid_40.mp4"],
+    "400": ["https://isaretdilisozlugu.com/video/kelime/vid_400.mp4"],
+    "4000": ["https://isaretdilisozlugu.com/video/kelime/vid_4000.mp4"],
+    "50": ["https://isaretdilisozlugu.com/video/kelime/vid_50.mp4"],
+    "500": ["https://isaretdilisozlugu.com/video/kelime/vid_500.mp4"],
+    "5000": ["https://isaretdilisozlugu.com/video/kelime/vid_5000.mp4"],
+    "60": ["https://isaretdilisozlugu.com/video/kelime/vid_60.mp4"],
+    "600": ["https://isaretdilisozlugu.com/video/kelime/vid_600.mp4"],
+
+    "zihin": ["https://isaretdilisozlugu.com/video/kelime/vid_zihin.mp4"],
+    "zihni": ["https://isaretdilisozlugu.com/video/kelime/vid_zihin.mp4"],
+    "zihnini": ["https://isaretdilisozlugu.com/video/kelime/vid_zihin.mp4"],
+    "zihnine": ["https://isaretdilisozlugu.com/video/kelime/vid_zihin.mp4"],
+    "zihne": ["https://isaretdilisozlugu.com/video/kelime/vid_zihin.mp4"],
+
+    "zihinsel engelli": ["https://isaretdilisozlugu.com/video/kelime/vid_zihinsel%20engelli.mp4"],
+
+    "zil": ["https://isaretdilisozlugu.com/video/kelime/vid_zil.mp4"],
+    "zili": ["https://isaretdilisozlugu.com/video/kelime/vid_zil.mp4"],
+    "zile": ["https://isaretdilisozlugu.com/video/kelime/vid_zil.mp4"],
+    "zilde": ["https://isaretdilisozlugu.com/video/kelime/vid_zil.mp4"],
+    "ziline": ["https://isaretdilisozlugu.com/video/kelime/vid_zil.mp4"],
+    "zilmiş": ["https://isaretdilisozlugu.com/video/kelime/vid_zil.mp4"],
+
+    "zincir": ["https://isaretdilisozlugu.com/video/kelime/vid_zincir.mp4"],
+    "zinciri": ["https://isaretdilisozlugu.com/video/kelime/vid_zincir.mp4"],
+    "zincire": ["https://isaretdilisozlugu.com/video/kelime/vid_zincir.mp4"],
+    "zincirin": ["https://isaretdilisozlugu.com/video/kelime/vid_zincir.mp4"],
+    "zincirle": ["https://isaretdilisozlugu.com/video/kelime/vid_zincir.mp4"],
+    "zincirledim": ["https://isaretdilisozlugu.com/video/kelime/vid_zincir.mp4"],
+    "zincirmiş": ["https://isaretdilisozlugu.com/video/kelime/vid_zincir.mp4"],
+
+    "zincirli lastik": ["https://isaretdilisozlugu.com/video/kelime/vid_zincirli%20lastik.mp4"],
+
+    "ziraat": ["https://isaretdilisozlugu.com/video/kelime/vid_ziraat.mp4"],
+    "ziraati": ["https://isaretdilisozlugu.com/video/kelime/vid_ziraat.mp4"],
+    "ziraate": ["https://isaretdilisozlugu.com/video/kelime/vid_ziraat.mp4"],
+    "ziraatin": ["https://isaretdilisozlugu.com/video/kelime/vid_ziraat.mp4"],
+
+    "ziraat bankası": ["https://isaretdilisozlugu.com/video/kelime/vid_ziraat%20bankas%C4%B1.mp4"],
+    "ziraat mühendisi": ["https://isaretdilisozlugu.com/video/kelime/vid_ziraat%20m%C3%BChendisi.mp4"],
+
+    "ziyaret": ["https://isaretdilisozlugu.com/video/kelime/vid_ziyaret.mp4"],
+    "ziyareti": ["https://isaretdilisozlugu.com/video/kelime/vid_ziyaret.mp4"],
+    "ziyarete": ["https://isaretdilisozlugu.com/video/kelime/vid_ziyaret.mp4"],
+    "ziyarette": ["https://isaretdilisozlugu.com/video/kelime/vid_ziyaret.mp4"],
+    "ziyarettesin": ["https://isaretdilisozlugu.com/video/kelime/vid_ziyaret.mp4"],
+    "ziyaretin": ["https://isaretdilisozlugu.com/video/kelime/vid_ziyaret.mp4"],
+
+    "zonguldak": ["https://isaretdilisozlugu.com/video/kelime/vid_zonguldak.mp4"],
+
+    "zor": ["https://isaretdilisozlugu.com/video/kelime/vid_zor.mp4"],
+    "zoru": ["https://isaretdilisozlugu.com/video/kelime/vid_zor.mp4"],
+    "zora": ["https://isaretdilisozlugu.com/video/kelime/vid_zor.mp4"],
+    "zorla": ["https://isaretdilisozlugu.com/video/kelime/vid_zor.mp4"],
+    "zorda": ["https://isaretdilisozlugu.com/video/kelime/vid_zor.mp4"],
+    "zormuş": ["https://isaretdilisozlugu.com/video/kelime/vid_zor.mp4"],
+
+    "zorba": ["https://isaretdilisozlugu.com/video/kelime/vid_zorba.mp4"],
+    "zorbasın": ["https://isaretdilisozlugu.com/video/kelime/vid_zorba.mp4"],
+    "zorbala": ["https://isaretdilisozlugu.com/video/kelime/vid_zorba.mp4"],
+    "zorbalamış": ["https://isaretdilisozlugu.com/video/kelime/vid_zorba.mp4"],
+    "zorbaymış": ["https://isaretdilisozlugu.com/video/kelime/vid_zorba.mp4"],
+
+    "zorunlu": ["https://isaretdilisozlugu.com/video/kelime/vid_zorunlu.mp4"],
+    "zorunluymuş": ["https://isaretdilisozlugu.com/video/kelime/vid_zorunlu.mp4"],
+    "zorunlusun": ["https://isaretdilisozlugu.com/video/kelime/vid_zorunlu.mp4"],
+    "zorunda": ["https://isaretdilisozlugu.com/video/kelime/vid_zorunlu.mp4"],
+    "zorundasın": ["https://isaretdilisozlugu.com/video/kelime/vid_zorunlu.mp4"],
+
+    "zurna": ["https://isaretdilisozlugu.com/video/kelime/vid_zurna.mp4"],
+    "zurnasın": ["https://isaretdilisozlugu.com/video/kelime/vid_zurna.mp4"],
+    "zurnaymış": ["https://isaretdilisozlugu.com/video/kelime/vid_zurna.mp4"],
+
+    "zürafa": ["https://isaretdilisozlugu.com/video/kelime/vid_z%C3%BCrafa.mp4"],
+    "zürafaymış": ["https://isaretdilisozlugu.com/video/kelime/vid_z%C3%BCrafa.mp4"],
+    "zürafasın": ["https://isaretdilisozlugu.com/video/kelime/vid_z%C3%BCrafa.mp4"],
+    "zürafada": ["https://isaretdilisozlugu.com/video/kelime/vid_z%C3%BCrafa.mp4"],
+
+    
+    "görüşürüz": ["https://isaretdilisozlugu.com/video/kelime/vid_g%C3%B6r%C3%BC%C5%9F%C3%BCr%C3%BCz.mp4"],
+    "görüşeceğiz": ["https://isaretdilisozlugu.com/video/kelime/vid_g%C3%B6r%C3%BC%C5%9F%C3%BCr%C3%BCz.mp4"],
+    "görüşcez": ["https://isaretdilisozlugu.com/video/kelime/vid_g%C3%B6r%C3%BC%C5%9F%C3%BCr%C3%BCz.mp4"],
+    "görüşelim": ["https://isaretdilisozlugu.com/video/kelime/vid_g%C3%B6r%C3%BC%C5%9F%C3%BCr%C3%BCz.mp4"],
+    "görüştüm": ["https://isaretdilisozlugu.com/video/kelime/vid_g%C3%B6r%C3%BC%C5%9F%C3%BCr%C3%BCz.mp4"],
+
+    "merhaba": ["https://isaretdilisozlugu.com/video/kelime/vid_merhaba.mp4"],
     "şeftali": [
       "https://isaretdilisozlugu.com/video/cumle/Bana%20yedi%20kilo%20%C5%9Feftali%20almam%C4%B1%20s%C3%B6yledi.mp4"
     ],
