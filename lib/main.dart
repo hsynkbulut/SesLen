@@ -7,7 +7,9 @@ import 'package:seslen_app/ui/components/custom_bottom_navbar.dart';
 void main() {
   SystemChrome.setSystemUIOverlayStyle(
       const SystemUiOverlayStyle(statusBarColor: Colors.transparent));
-  runApp(const MyApp());
+  runApp(const MyApp(
+
+  ));
 }
 
 class MyApp extends StatelessWidget {
@@ -44,3 +46,10 @@ class MyApp extends StatelessWidget {
 
 /*theme: ThemeData.light() yapıp,  SystemUiOverlayStyle.light yaparsan saat, 
 şarj vs. üst bilgi kaybolur.*/
+
+
+
+
+
+
+
