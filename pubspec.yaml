@@ -12,18 +12,18 @@ dependencies:
     sdk: flutter
   
   #İkon paketi için
-  cupertino_icons: ^1.0.2
-  font_awesome_flutter: ^10.5.0
+  cupertino_icons: ^1.0.6
+  font_awesome_flutter: ^10.6.0
 
   #Mikrofon butonuna hareketli animasyon eklemek için
   avatar_glow: ^2.0.2
 
   #Sesi metne çevirmek için
-  speech_to_text: ^6.1.1
+  speech_to_text: ^6.4.0
 
   #Video oynatıcısı için
-  video_player: ^2.7.0
-  chewie: ^1.7.0
+  video_player: ^2.8.1
+  chewie: ^1.7.1
 
   #bottom navbar için
   custom_line_indicator_bottom_navbar: ^0.0.8

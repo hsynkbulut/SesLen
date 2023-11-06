@@ -56,6 +56,7 @@ class _TextToVideoState extends State<TextToVideo> {
             autoPlay: false,
             looping: false,
             aspectRatio: 1.5,
+            allowFullScreen: true, //Tam ekrana izin ver?
           );
           newControllers.add(chewieController);
         }
@@ -69,6 +70,7 @@ class _TextToVideoState extends State<TextToVideo> {
           autoPlay: false,
           looping: false,
           aspectRatio: 1.5,
+          allowFullScreen: true, //Tam ekrana izin ver?
         );
         newControllers.add(chewieController);
       }
@@ -110,6 +112,9 @@ class _TextToVideoState extends State<TextToVideo> {
     }
   }
 
+  final formKey = GlobalKey<FormState>();
+  final FocusNode _focusNode = FocusNode();
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -121,6 +126,8 @@ class _TextToVideoState extends State<TextToVideo> {
           children: [
             Expanded(
               child: SingleChildScrollView(
+                keyboardDismissBehavior:
+                    ScrollViewKeyboardDismissBehavior.onDrag,
                 child: Padding(
                   padding: CustomEdgeInsets.paddingAll,
                   child: Column(
@@ -133,17 +140,24 @@ class _TextToVideoState extends State<TextToVideo> {
                         height: _textEditingController.text.isEmpty
                             ? 300.0 // Başlangıç yüksekliği, eskisi: 100.0
                             : null, // Metin girildiğinde yükseklik otomatik ayarlanacak
-                        child: CustomTextField(
-                          textEditingController: _textEditingController,
-                          onChanged: (text) {
-                            setState(
-                                () {}); // Metin değiştiğinde yeniden çizim yapılmasını sağlar
-                          },
+                        child: Form(
+                          key: formKey,
+                          child: CustomTextField(
+                            textEditingController: _textEditingController,
+                            onChanged: (text) {
+                              setState(
+                                  () {}); // Metin değiştiğinde yeniden çizim yapılmasını sağlar
+                            },
+                            focusNode: _focusNode,
+                          ),
                         ),
                       ),
                       const HeightSizeWidget(selectedSize: HeightSize.size8),
                       OutlinedButton(
                         onPressed: () {
+                          // Metin alanından odaklanmayı kaldırarak klavyeyi kapat
+                          _focusNode.unfocus();
+
                           String inputText = _textEditingController.text;
                           _convertTextToVideos(inputText);
                         },
