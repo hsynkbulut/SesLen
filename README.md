@@ -1,7 +1,7 @@
 # SesLen
 Bu uygulama, işitme engelli bireylerin sesli veya yazılı ifadeleri işaret dilinde video olarak görmelerini sağlayan bir mobil uygulamadır. Bu sayede, işitme engelli bireyler bulundukları ortamlarda konuşulanları anlayabilir ve sohbete katılabilirler.
 
-![image](assets/logos/app_logo.png)
+![image](assets/logos/splash-logo.png)
 
 ## Ekip Üyeleri
 - Hüseyin Karabulut
@@ -47,9 +47,18 @@ Bu uygulama, işitme engelli bireylerin sesli veya yazılı ifadeleri işaret di
     <td>7</td>
      <td>8</td>
   <tr>
-    <td><img src="assets/images/app_images/7.png" width="350" height="540"></td>
-    <td><img src="assets/images/app_images/8.png" width="350" height="540"></td>
+    <td><img src="assets/images/app_images/7.png" width="270" height="540"></td>
+    <td><img src="assets/images/app_images/8.png" width="270" height="540"></td>
  </table>
 
+
+## Örnek Metinler
+```
+Benim memleketim Kocaeli.
+Eniştemle yarın ders çalışacağız.
+Kahvaltıda tost yedim.
+Bugün hava sıcak.
+Sinemaya gitmek istiyorum.
+```
 
 Bu uygulamayı geliştirirken işitme engelli bireylere yardımcı olma amacımızı gerçekleştirmeye çalıştık. Eğer projemize katkıda bulunmak veya sorularınız varsa, lütfen bizimle iletişime geçin.
