@@ -47,8 +47,8 @@ Bu uygulama, işitme engelli bireylerin sesli veya yazılı ifadeleri işaret di
     <td>7</td>
      <td>8</td>
   <tr>
-    <td><img src="assets/images/app_images/7.png" width="245" height="540"></td>
-    <td><img src="assets/images/app_images/8.png" width="245" height="540"></td>
+    <td><img src="assets/images/app_images/7.png" width="247" height="540"></td>
+    <td><img src="assets/images/app_images/8.png" width="247" height="540"></td>
  </table>
 
 
