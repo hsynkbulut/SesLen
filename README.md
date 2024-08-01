@@ -1,7 +1,7 @@
 # SesLen
 Bu uygulama, işitme engelli bireylerin sesli veya yazılı ifadeleri işaret dilinde video olarak görmelerini sağlayan bir mobil uygulamadır. Bu sayede, işitme engelli bireyler bulundukları ortamlarda konuşulanları anlayabilir ve sohbete katılabilirler.
 
-![image](https://github.com/hsynkbulut/SesLen/blob/master/assets/icons/app_logo.png)
+![image](assets/logos/app_logo.png)
 
 ## Ekip Üyeleri
 - Hüseyin Karabulut
@@ -18,6 +18,38 @@ Bu uygulama, işitme engelli bireylerin sesli veya yazılı ifadeleri işaret di
 - Metinden Videoya Çeviri seçeneğinde, kullanıcı klavye ile yazılı bir ifade yazar. Uygulama bu metni işaret diline çevirir ve ekranda video olarak gösterir.
 - Uygulama, Türk İşaret Dili’ni destekler.
 
----
+## Ekran Görüntüleri
+
+<table>
+  <tr>
+    <td>1</td>
+     <td>2</td>
+     <td>3</td>  
+  <tr>
+    <td><img src="assets/images/app_images/1.png" width="350" height="540"></td>
+    <td><img src="assets/images/app_images/2.png" width="350" height="540"></td>
+    <td><img src="assets/images/app_images/3.png" width="350" height="540"></td>   
+ </table>
+
+<table>
+  <tr>
+    <td>4</td>
+     <td>5</td>
+     <td>6</td> 
+  <tr>
+    <td><img src="assets/images/app_images/4.png" width="350" height="540"></td>
+    <td><img src="assets/images/app_images/5.png" width="350" height="540"></td>
+    <td><img src="assets/images/app_images/6.png" width="350" height="540"></td>
+ </table>
+  
+<table>
+  <tr>
+    <td>7</td>
+     <td>8</td>
+  <tr>
+    <td><img src="assets/images/app_images/7.png" width="350" height="540"></td>
+    <td><img src="assets/images/app_images/8.png" width="350" height="540"></td>
+ </table>
+
 
 Bu uygulamayı geliştirirken işitme engelli bireylere yardımcı olma amacımızı gerçekleştirmeye çalıştık. Eğer projemize katkıda bulunmak veya sorularınız varsa, lütfen bizimle iletişime geçin.

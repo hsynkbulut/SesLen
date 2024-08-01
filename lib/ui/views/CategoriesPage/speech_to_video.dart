@@ -1,6 +1,7 @@
 // ignore_for_file: library_private_types_in_public_api, sort_child_properties_last
 
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:seslen_app/common/constants/custom_edge_insets.dart';
 import 'package:seslen_app/common/constants/height_size_widget.dart';
 import 'package:seslen_app/common/helpers/snackbar_helper.dart';
@@ -35,6 +36,7 @@ class _SpeechToVideoState extends State<SpeechToVideo> {
   @override
   void dispose() {
     for (var controller in _chewieControllers) {
+      controller.videoPlayerController.dispose();
       controller.dispose();
     }
     _textEditingController.dispose();
@@ -82,6 +84,13 @@ class _SpeechToVideoState extends State<SpeechToVideo> {
   }
 
   Future<void> _convertTextToVideos(String text) async {
+    // Clear any previous controllers
+    for (var controller in _chewieControllers) {
+      controller.videoPlayerController.dispose();
+      controller.dispose();
+    }
+    _chewieControllers.clear();
+
     // Kullanıcıya bilgilendirme mesajını göstermek için
     SnackBarHelper.showSnackBar(
         context, "Konuşma çevriliyor, lütfen bekleyin...");
@@ -94,8 +103,32 @@ class _SpeechToVideoState extends State<SpeechToVideo> {
     for (var word in words) {
       if (videoUrls!.containsKey(word)) {
         for (var url in videoUrls[word]!) {
+          try {
+            VideoPlayerController videoPlayerController =
+                VideoPlayerController.networkUrl(Uri.parse(url));
+            await videoPlayerController.initialize();
+            ChewieController chewieController = ChewieController(
+              videoPlayerController: videoPlayerController,
+              autoPlay: false,
+              looping: false,
+              aspectRatio: 1.5, //Bu değeri istediğiniz gibi ayarlayabilirsiniz
+              allowFullScreen: true, //Tam ekrana izin ver?
+            );
+            newControllers.add(chewieController);
+          } on PlatformException catch (e) {
+            // Handle specific platform exception here
+            SnackBarHelper.showSnackBar(
+                context, "Video yüklenirken bir hata oluştu: ${e.message}");
+          } catch (e) {
+            // Handle any other errors
+            SnackBarHelper.showSnackBar(context, "Bir hata oluştu: $e");
+          }
+        }
+      } else {
+        try {
           VideoPlayerController videoPlayerController =
-              VideoPlayerController.networkUrl(Uri.parse(url));
+              VideoPlayerController.networkUrl(Uri.parse(
+                  'https://isaretdilisozlugu.com/video/kelime/vid_bilmemek.mp4'));
           await videoPlayerController.initialize();
           ChewieController chewieController = ChewieController(
             videoPlayerController: videoPlayerController,
@@ -105,20 +138,10 @@ class _SpeechToVideoState extends State<SpeechToVideo> {
             allowFullScreen: true, //Tam ekrana izin ver?
           );
           newControllers.add(chewieController);
+        } catch (e) {
+          SnackBarHelper.showSnackBar(
+              context, "Varsayılan video yüklenirken bir hata oluştu: $e");
         }
-      } else {
-        VideoPlayerController videoPlayerController =
-            VideoPlayerController.networkUrl(Uri.parse(
-                'https://isaretdilisozlugu.com/video/kelime/vid_bilmemek.mp4'));
-        await videoPlayerController.initialize();
-        ChewieController chewieController = ChewieController(
-          videoPlayerController: videoPlayerController,
-          autoPlay: false,
-          looping: false,
-          aspectRatio: 1.5, //Bu değeri istediğiniz gibi ayarlayabilirsiniz
-          allowFullScreen: true, //Tam ekrana izin ver?
-        );
-        newControllers.add(chewieController);
       }
     }
 

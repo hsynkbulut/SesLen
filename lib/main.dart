@@ -26,31 +26,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: secondaryColor),
         useMaterial3: true,
       ),
-
-      /*
-      ThemeData.light().copyWith(
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepOrangeAccent),
-        useMaterial3: true,
-        appBarTheme: const AppBarTheme(
-          centerTitle: true,
-          systemOverlayStyle: SystemUiOverlayStyle.light,
-          backgroundColor: Colors.transparent,
-          elevation: 0,
-        ),
-      ),
-      */
-      home:
-          const CustomBottomNavbar(), //Uygulama ilk açıldığında gösterilecek olan sayfa
+      home: const CustomBottomNavbar(),
     );
   }
 }
-
-/*theme: ThemeData.light() yapıp,  SystemUiOverlayStyle.light yaparsan saat, 
-şarj vs. üst bilgi kaybolur.*/
-
-
-
-
-
-
-

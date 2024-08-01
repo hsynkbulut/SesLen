@@ -23,26 +23,6 @@ class _HomePageState extends State<HomePage> {
     return Scaffold(
       backgroundColor: gradientColor2, //Color(0xFFFFC800),
       appBar: CustomAppBar(),
-      /*
-      appBar: AppBar(
-        backgroundColor: primaryColor,
-        leading: Padding(
-          padding: EdgeInsets.only(left: 8),
-          child: Image.asset(
-            PathConstant.appBarLogoImage,
-            width: 10,
-            height: 10,
-            alignment: Alignment.center,
-          ),
-        ),
-        centerTitle: true,
-        title: Text("SesLen"),
-        titleTextStyle: TextStyle(
-            fontWeight: FontWeight.bold,
-            fontSize: 20,
-            color: mainAuxiliaryColor),
-      ),
-      */
       body: Container(
         color: mainAuxiliaryColor,
         child: SingleChildScrollView(
@@ -55,15 +35,6 @@ class _HomePageState extends State<HomePage> {
               Container(
                 padding: const EdgeInsets.only(top: 33.0),
                 decoration: backgroundGradient.buildGradient2(),
-                /*
-                BoxDecoration(
-                  borderRadius: BorderRadius.only(
-                    topLeft: Radius.circular(45),
-                    topRight: Radius.circular(45),
-                  ),
-                  color: primaryColor,
-                ),
-                */
                 height: 200,
                 child: HomeCardWidget(),
               ),
@@ -71,17 +42,7 @@ class _HomePageState extends State<HomePage> {
                 padding: EdgeInsets.zero,
                 child: Container(
                   padding: const EdgeInsets.only(top: 33.0),
-                  decoration: backgroundGradient
-                      .buildGradient(), // Arka plan rengini gradient olarak ayarlamak için
-                  /*
-                  BoxDecoration(
-                    borderRadius: BorderRadius.only(
-                      topLeft: Radius.circular(0),
-                      topRight: Radius.circular(0),
-                    ),
-                    color: Color(0xFFFFD900),
-                  ),
-                  */
+                  decoration: backgroundGradient.buildGradient(),
                   height: 500,
                   child: HomeGridView(),
                 ),

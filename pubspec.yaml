@@ -1,12 +1,12 @@
 name: seslen_app
 description: A new Flutter project.
-publish_to: 'none' # Remove this line if you wish to publish to pub.dev
-
+publish_to: 'none'
 version: 1.0.0+1
 
 environment:
   sdk: '>=3.1.0 <4.0.0'
 
+#------------------ PACKAGES ------------------#
 dependencies:
   flutter:
     sdk: flutter
@@ -28,21 +28,43 @@ dependencies:
   #bottom navbar için
   custom_line_indicator_bottom_navbar: ^0.0.8
 
+  # Splash ekranı için
+  flutter_native_splash: ^2.4.1
+
+# ----------------------- ./ PACKAGES END ----------------------- #
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
-
   flutter_lints: ^2.0.0
+
+#-------------- Native Splash Oluşturma --------------#
+# Terminale şunu yaz: flutter pub run flutter_native_splash:create
+flutter_native_splash:
+  color: "#FFFFFF"
+  color_dark: "#272727"
+  image: assets/logos/splash-logo.png
+  image_dark: assets/logos/splash-logo.png
+
+  android_12:
+    color: "#FFFFFF"
+    color_dark: "#272727"
+    image: assets/logos/splash-logo.png
+    image_dark: assets/logos/splash-logo.png
+  
+  web: false
+#------------------------ ./ ------------------------#
 
 
 flutter:
   uses-material-design: true
 
+  # ----------------------- LOCAL ASSETS ----------------------- #
   assets:
     - assets/
     - assets/icons/
     - assets/images/
+    - assets/logos/
     - assets/video_data.json
 
   # example:

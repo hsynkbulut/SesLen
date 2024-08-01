@@ -1,25 +1,27 @@
-// ignore_for_file: prefer_const_constructors, prefer_const_literals_to_create_immutables, avoid_print, must_be_immutable
 import 'package:flutter/material.dart';
-import 'package:seslen_app/common/constants/path_constant.dart';
+import 'package:seslen_app/common/constants/image_strings.dart';
 import 'package:seslen_app/common/constants/string_constant.dart';
 import 'package:seslen_app/core/utils/routing/route_constant.dart';
 import 'package:seslen_app/core/utils/themes/custom_colors.dart';
-//import 'destination_page_1.dart'; // İlk kart için yönlendirilecek sayfanın import yolu
-//import 'destination_page_2.dart'; // İkinci kart için yönlendirilecek sayfanın import yolu
 
-class HomeGridView extends StatelessWidget {
+class HomeGridView extends StatefulWidget {
+  const HomeGridView({super.key});
+
+  @override
+  State<HomeGridView> createState() => _HomeGridViewState();
+}
+
+class _HomeGridViewState extends State<HomeGridView> {
   List data = [
     {
       "name": StringConstant.textVideoName,
-      "iconPath": PathConstant.textVideoIcon
+      "iconPath": ImagePaths.textVideoIcon
     },
     {
       "name": StringConstant.speechVideoName,
-      "iconPath": PathConstant.speechVideoIcon
+      "iconPath": ImagePaths.speechVideoIcon
     },
   ];
-
-  HomeGridView({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -44,7 +46,7 @@ class HomeGridView extends StatelessWidget {
               padding: const EdgeInsets.all(4.0),
               child: Container(
                 decoration: BoxDecoration(
-                  gradient: LinearGradient(
+                  gradient: const LinearGradient(
                     begin: Alignment.topLeft,
                     end: Alignment.bottomRight,
                     colors: [gradientDarkColor1, gradientDarkColor2],
@@ -70,7 +72,7 @@ class HomeGridView extends StatelessWidget {
                       ),
                       Text(
                         data[index]["name"],
-                        style: TextStyle(
+                        style: const TextStyle(
                             color: mainAuxiliaryColor,
                             fontWeight: FontWeight.bold),
                       ),
@@ -82,11 +84,8 @@ class HomeGridView extends StatelessWidget {
           );
         },
         gridDelegate:
-            SliverGridDelegateWithFixedCrossAxisCount(crossAxisCount: 2),
+            const SliverGridDelegateWithFixedCrossAxisCount(crossAxisCount: 2),
       ),
     );
   }
 }
-
-/*NOT: AxisAlignment'ların özellikleri Row yada Column olmasına göre değişir.
-Yani burada Column'a göre özellikleri böyle iken Row'da tam tersi oluyor. */

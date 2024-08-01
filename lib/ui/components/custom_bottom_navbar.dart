@@ -4,7 +4,6 @@ import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:seslen_app/core/utils/themes/custom_colors.dart';
 import 'package:seslen_app/ui/views/AboutPage/about_page.dart';
-import 'package:seslen_app/ui/views/HelpPage/help_page.dart';
 import 'package:seslen_app/ui/views/HomePage/homepage.dart';
 
 class CustomBottomNavbar extends StatefulWidget {
@@ -15,23 +14,8 @@ class CustomBottomNavbar extends StatefulWidget {
 }
 
 class _CustomBottomNavbarState extends State<CustomBottomNavbar> {
-  int _selectedIndex = 0; //default index
-
-  final List<Widget> _widgetOptions = const [
-    HomePage(),
-    HelpPage(),
-    AboutPage()
-  ];
-
-/*
-  final List<Widget> _widgetOptions = const [
-    /*
-    Text('Anasayfa Ekranı'),
-    Text('Yardım Ekranı'),
-    Text('Hakkımızda Ekranı'),
-    */
-  ];
-*/
+  int _selectedIndex = 0;
+  final List<Widget> _widgetOptions = const [HomePage(), AboutPage()];
 
   @override
   Widget build(BuildContext context) {
@@ -50,16 +34,12 @@ class _CustomBottomNavbarState extends State<CustomBottomNavbar> {
           });
         },
         enableLineIndicator: true,
-        lineIndicatorWidth: 3,
+        lineIndicatorWidth: 2,
         indicatorType: IndicatorType.Top,
         customBottomBarItems: [
           CustomBottomBarItems(
             label: 'Anasayfa',
             icon: FontAwesomeIcons.house,
-          ),
-          CustomBottomBarItems(
-            label: 'Yardım',
-            icon: FontAwesomeIcons.question,
           ),
           CustomBottomBarItems(
               label: 'Hakkımızda', icon: FontAwesomeIcons.circleInfo),
