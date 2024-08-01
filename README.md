@@ -52,4 +52,13 @@ Bu uygulama, işitme engelli bireylerin sesli veya yazılı ifadeleri işaret di
  </table>
 
 
+## Örnek Metinler
+```
+Benim memleketim Kocaeli.
+Eniştemle yarın ders çalışacağız.
+Kahvaltıda tost yedim.
+Bugün hava sıcak.
+Sinemaya gitmek istiyorum.
+```
+
 Bu uygulamayı geliştirirken işitme engelli bireylere yardımcı olma amacımızı gerçekleştirmeye çalıştık. Eğer projemize katkıda bulunmak veya sorularınız varsa, lütfen bizimle iletişime geçin.
