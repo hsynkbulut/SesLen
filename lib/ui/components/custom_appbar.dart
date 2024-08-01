@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:seslen_app/common/constants/app_constant.dart';
-import 'package:seslen_app/common/constants/path_constant.dart';
+import 'package:seslen_app/common/constants/image_strings.dart';
 import '../../core/utils/routing/route_constant.dart';
 import '../../core/utils/themes/custom_colors.dart';
 
@@ -43,7 +43,7 @@ class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
               )
             : Container(
                 padding: const EdgeInsets.all(5),
-                child: Image.asset(PathConstant.appBarLogoImage),
+                child: Image.asset(ImagePaths.appLogo),
               ),
         centerTitle: true,
         backgroundColor: primaryColor,

@@ -6,22 +6,25 @@ class CustomTextField extends StatelessWidget {
     Key? key,
     required TextEditingController textEditingController,
     required ValueSetter<String> onChanged,
+    this.focusNode,
   })  : _textEditingController = textEditingController,
         _onChanged = onChanged,
         super(key: key);
 
   final TextEditingController _textEditingController;
   final ValueSetter<String> _onChanged;
+  final FocusNode? focusNode;
 
   @override
   Widget build(BuildContext context) {
-    return TextField(
+    return TextFormField(
+      focusNode: focusNode,
       controller: _textEditingController,
       minLines: 6,
       maxLines: 6,
       maxLength: 200,
       cursorColor: secondaryColor,
-      keyboardType: TextInputType.multiline,
+      keyboardType: TextInputType.text,
       onChanged: (text) {
         _onChanged(text);
       },

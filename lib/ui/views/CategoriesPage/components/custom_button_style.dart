@@ -13,7 +13,7 @@ class CustomButtonStyle {
       backgroundColor: primaryColor, //butonun arkaplan rengi
       foregroundColor: mainAuxiliaryColor, //butonun yazı ve ikon rengi
       elevation: 15, //gölgelik boyutu
-      shadowColor: Colors.yellow, //gölgelik rengi
+      shadowColor: secondaryColor, //gölgelik rengi
       side: const BorderSide(
         color: primaryColor,
         width: 2,

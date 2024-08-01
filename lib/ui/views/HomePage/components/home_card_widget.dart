@@ -1,30 +1,29 @@
-// ignore_for_file: prefer_const_constructors, prefer_const_literals_to_create_immutables
 import 'package:flutter/material.dart';
-import 'package:seslen_app/common/constants/path_constant.dart';
+import 'package:seslen_app/common/constants/image_strings.dart';
 
 class HomeCardWidget extends StatelessWidget {
   const HomeCardWidget({super.key});
 
-  Widget cardbuilderTR() {
+  Widget cardbuilderTR(BuildContext context) {
     return Card(
       child: ClipRRect(
-        borderRadius: BorderRadius.all(Radius.circular(8.0)),
+        borderRadius: const BorderRadius.all(Radius.circular(8.0)),
         child: Image.asset(
-          PathConstant.turkeyIcon, // Bu resmin yolunu projenize göre ayarlayın
+          ImagePaths.turkeyIcon, // Bu resmin yolunu projenize göre ayarlayın
           fit: BoxFit.cover,
           height: 120.0,
-          width: 120.0,
+          width: 130.0,
         ),
       ),
     );
   }
 
-  Widget cardbuilderLAN() {
+  Widget cardbuilderLAN(BuildContext context) {
     return Card(
       child: ClipRRect(
-        borderRadius: BorderRadius.all(Radius.circular(8.0)),
+        borderRadius: const BorderRadius.all(Radius.circular(8.0)),
         child: Image.asset(
-          PathConstant
+          ImagePaths
               .signLanguageIcon, // Bu resmin yolunu projenize göre ayarlayın
           fit: BoxFit.cover,
           height: 120.0,
@@ -42,13 +41,10 @@ class HomeCardWidget extends StatelessWidget {
       //crossAxisAlignment: dikeydeki konumlarını ayarlar.
       crossAxisAlignment: CrossAxisAlignment.center,
       children: [
-        cardbuilderTR(),
+        cardbuilderTR(context),
         //SizedBox(width: 25.0),
-        cardbuilderLAN(),
+        cardbuilderLAN(context),
       ],
     );
   }
 }
-
-/*NOT: AxisAlignment'ların özellikleri Row yada Column olmasına göre değişir.
-Yani burada Row'a göre özellikleri böyle iken Column'da tam tersi oluyor. */
